@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview | JapaSafe</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <main class="container">
+        <h1>Mock Visa Interview</h1>
+        <p class="subtitle">Practice common visa interview questions to boost your confidence</p>
+        
+        <div class="interview-container">
+            <div class="question-card">
+                <div class="question-header">
+                    <h2 id="currentQuestion">Click "Generate Question" to start</h2>
+                    <div class="question-actions">
+                        <button id="difficultBtn" class="btn small secondary" disabled>
+                            <i class="fas fa-exclamation-triangle"></i> Mark Difficult
+                        </button>
+                    </div>
+                </div>
+                <div class="question-body">
+                    <div class="answer-section hidden" id="answerSection">
+                        <h3>Suggested Approach:</h3>
+                        <p id="answerText"></p>
+                    </div>
+                </div>
+                <div class="question-footer">
+                    <button id="showAnswerBtn" class="btn small secondary" disabled>
+                        <i class="fas fa-lightbulb"></i> Show Answer
+                    </button>
+                    <button id="nextQuestionBtn" class="btn primary">
+                        <i class="fas fa-sync-alt"></i> Generate Question
+                    </button>
+                </div>
+            </div>
+
+            <div class="practice-mode-section">
+                <h3>Practice Mode</h3>
+                <p>Test yourself with 5 timed questions</p>
+                <button id="practiceModeBtn" class="btn secondary">
+                    <i class="fas fa-stopwatch"></i> Start Practice Session
+                </button>
+                <div class="practice-stats hidden" id="practiceStats">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <span id="progressText">1/5</span>
+                    </div>
+                    <div class="timer" id="timer">01:30</div>
+                </div>
+            </div>
+
+            <div class="difficult-questions-section hidden" id="difficultQuestionsSection">
+                <h3>Your Difficult Questions</h3>
+                <ul id="difficultQuestionsList"></ul>
+                <button id="clearDifficultBtn" class="btn small secondary">
+                    <i class="fas fa-trash-alt"></i> Clear List
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/questions.js"></script>
+    <script src="../js/mock.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
