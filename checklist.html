@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Checklist | JapaSafe</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <main class="container">
+        <h1>Visa Document Checklist</h1>
+        <p class="subtitle">Make sure you have all the required documents for your visa application</p>
+        
+        <div class="progress-tracker">
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressBarFill"></div>
+            </div>
+            <span id="progressText">0% Complete</span>
+        </div>
+        
+        <div class="checklist-container">
+            <div class="checklist-category">
+                <h2><i class="fas fa-passport"></i> Identification Documents</h2>
+                <ul class="checklist-items" id="identificationDocs">
+                    <!-- Filled by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="checklist-category">
+                <h2><i class="fas fa-university"></i> Academic Documents</h2>
+                <ul class="checklist-items" id="academicDocs">
+                    <!-- Filled by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="checklist-category">
+                <h2><i class="fas fa-money-bill-wave"></i> Financial Documents</h2>
+                <ul class="checklist-items" id="financialDocs">
+                    <!-- Filled by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="checklist-category">
+                <h2><i class="fas fa-file-alt"></i> Application Forms</h2>
+                <ul class="checklist-items" id="applicationForms">
+                    <!-- Filled by JavaScript -->
+                </ul>
+            </div>
+            
+            <div class="checklist-category">
+                <h2><i class="fas fa-camera"></i> Additional Requirements</h2>
+                <ul class="checklist-items" id="additionalReqs">
+                    <!-- Filled by JavaScript -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="checklist-notes">
+            <h3><i class="fas fa-clipboard-list"></i> Additional Notes</h3>
+            <textarea id="checklistNotes" placeholder="Add any personal notes or reminders about your documents..."></textarea>
+        </div>
+    </main>
+
+    <script src="../js/checklist.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
