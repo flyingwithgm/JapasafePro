@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Tracker | JapaSafe</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Same navbar as index.html -->
+    </nav>
+
+    <main class="container">
+        <h1>Visa Timeline Tracker</h1>
+        <p class="subtitle">Keep track of important dates and deadlines for your visa process</p>
+        
+        <div class="timeline-controls">
+            <button id="addEventBtn" class="btn primary">
+                <i class="fas fa-plus"></i> Add New Event
+            </button>
+        </div>
+        
+        <div class="countdown-section">
+            <h2>Upcoming Deadlines</h2>
+            <div class="countdown-cards" id="countdownCards">
+                <!-- Filled by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="timeline-section">
+            <h2>Your Visa Timeline</h2>
+            <div class="timeline" id="timeline">
+                <!-- Filled by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Add Event Modal -->
+        <div class="modal" id="eventModal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Add New Event</h2>
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventName">Event Name</label>
+                        <input type="text" id="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Date</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Description (Optional)</label>
+                        <textarea id="eventDescription"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventPriority">Priority</label>
+                        <select id="eventPriority">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary">Save Event</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/timeline.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
